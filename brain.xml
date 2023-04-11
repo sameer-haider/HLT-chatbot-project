@@ -1,10 +1,14 @@
 <aiml>
-    <topic name="PLOT">
+    <category>
+        <pattern>WHAT IS * ABOUT</pattern>
+        <template>
+        Interstellar is a 2014 science fiction movie directed by Christopher Nolan. The movie follows a group of astronauts who travel through a wormhole in search of a new home for humanity after Earth becomes uninhabitable. Along the way, they encounter various challenges and obstacles that test their resolve and their understanding of the nature of time and space.
+        </template>
+    </category>
 
-    </topic>
-
+<!--
     <topic name="CHARACTERS">
 
     </topic>
-
+-->
 </aiml>
