@@ -6,6 +6,16 @@
         </template>
     </category>
 
+    <category>
+        <pattern>* COME OUT</pattern>
+        <template> Interstellar premiered in theaters November 2014</template>
+    </category>
+
+    <category>
+        <pattern>* DIRECTED *</pattern>
+        <template>Interstellar was directed by Christoper Nolan!</template>
+    </category>
+
 <!--
     <topic name="CHARACTERS">
 
