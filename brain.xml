@@ -16,6 +16,15 @@
         <template>Interstellar was directed by Christoper Nolan!</template>
     </category>
 
+    <category>
+        <pattern>* DIRECTED *</pattern>
+        <template>Interstellar was directed by Christoper Nolan!</template>
+    </category>
+
+        <category>
+        <pattern>* BLACK HOLES</pattern>
+        <template>Black holes are created when a star dies and collapses in on itself. Right at the moment of its creation, a gigantic explosion is released which is called a supernova. This supernova creates so much light and energy that it can be seen billions of light years away! After a black hole is born, it will suck in all matter and light through gravity and grow as it consumes more and more.</template>
+    </category>
 <!--
     <topic name="CHARACTERS">
 
