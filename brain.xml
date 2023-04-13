@@ -1,28 +1,23 @@
 <aiml>
     <category>
-        <pattern>WHAT IS * ABOUT</pattern>
+        <pattern>WHAT IS THE MOVIE ABOUT</pattern>
         <template>
         Interstellar is a 2014 science fiction movie directed by Christopher Nolan. The movie follows a group of astronauts who travel through a wormhole in search of a new home for humanity after Earth becomes uninhabitable. Along the way, they encounter various challenges and obstacles that test their resolve and their understanding of the nature of time and space.
         </template>
     </category>
 
     <category>
-        <pattern>* COME OUT</pattern>
+        <pattern>WHEN DID THE MOVIE COME OUT</pattern>
         <template> Interstellar premiered in theaters November 2014</template>
     </category>
 
     <category>
-        <pattern>* DIRECTED *</pattern>
+        <pattern>WHO DIRECTED THIS MOVIE</pattern>
         <template>Interstellar was directed by Christoper Nolan!</template>
     </category>
 
     <category>
-        <pattern>* DIRECTED *</pattern>
-        <template>Interstellar was directed by Christoper Nolan!</template>
-    </category>
-
-        <category>
-        <pattern>* BLACK HOLES</pattern>
+        <pattern>WHAT ARE BLACK HOLES</pattern>
         <template>Black holes are created when a star dies and collapses in on itself. Right at the moment of its creation, a gigantic explosion is released which is called a supernova. This supernova creates so much light and energy that it can be seen billions of light years away! After a black hole is born, it will suck in all matter and light through gravity and grow as it consumes more and more.</template>
     </category>
 <!--
