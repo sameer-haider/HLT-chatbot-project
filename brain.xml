@@ -22,19 +22,19 @@
 
 
     <category>
-        <pattern>WHAT IS THE MOVIE ABOUT</pattern>
+        <pattern>WHAT IS INTERSTELLAR ABOUT</pattern>
         <template>
         Interstellar is a 2014 science fiction movie directed by Christopher Nolan. The movie follows a group of astronauts who travel through a wormhole in search of a new home for humanity after Earth becomes uninhabitable. Along the way, they encounter various challenges and obstacles that test their resolve and their understanding of the nature of time and space.
         </template>
     </category>
 
     <category>
-        <pattern>WHEN DID THE MOVIE COME OUT</pattern>
+        <pattern>WHEN DID INTERSTELLAR COME OUT</pattern>
         <template> Interstellar premiered in theaters November 2014</template>
     </category>
 
     <category>
-        <pattern>WHO DIRECTED THIS MOVIE</pattern>
+        <pattern>WHO DIRECTED INTERSTELLAR</pattern>
         <template>Interstellar was directed by Christoper Nolan!</template>
     </category>
 
@@ -45,27 +45,27 @@
 
     <category>
         <pattern>WHAT GENRE IS THE MOVIE</pattern>
-        <template>GENRE:NEEDED</template>
+        <template>Interstellar is a science fiction movie.</template>
     </category>
 
     <category>
         <pattern>WHO IS IN THE MOVIE </pattern>
-        <template>CAST:NEEDED</template>
+        <template>. The movie features a cast of actors, including Matthew McConaughey, Anne Hathaway, Jessica Chastain, and Michael Caine, among others. </template>
     </category>
 
     <category>
         <pattern>HOW LONG IS THE MOVIE</pattern>
-        <template>MOVIE LENGTH</template>
+        <template>The movie is quite long compared to the average runtime of a movie it has a runtime of 2 hours and 49 minutes.</template>
     </category>
 
     <category>
         <pattern>WHAT IS THE MOVIE RATED</pattern>
-        <template>RATING</template>
+        <template>Interstellar is rated PG-13</template>
     </category>
 
     <category>
         <pattern>WHAT AWARDS DID THE MOVIE WIN</pattern>
-        <template>AWARDS</template>
+        <template>Interstellar was critically acclaimed upon its release in 2014, and it received numerous award nominations and wins. Such as the Academy Awards for Best Visual Effects and BAFTA Awards for Best Special Visual Effects. </template>
     </category>
 
     <category>
