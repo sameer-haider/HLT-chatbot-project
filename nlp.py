@@ -1,17 +1,21 @@
+from typing import Dict
 from nltk.tokenize import word_tokenize
 from nltk.corpus import stopwords
 from nltk.stem import WordNetLemmatizer
 from sklearn.metrics.pairwise import cosine_similarity
 import numpy as np
+import spacy
+
+NER = spacy.load("en_core_web_md")
 
 
-def best_match(user_input, patterns) -> str:
+def best_match(message, patterns) -> str:
     # Tokenize, lemmatize and remove stopwords from the user input and patterns
     stop_words = set(stopwords.words("english"))
     wordnet_lemmatizer = WordNetLemmatizer()
     user_input_tokens = [
         wordnet_lemmatizer.lemmatize(word.lower())
-        for word in word_tokenize(user_input)
+        for word in word_tokenize(message)
         if word.isalnum() and word.lower() not in stop_words
     ]
     pattern_tokens = [
@@ -46,3 +50,13 @@ def best_match(user_input, patterns) -> str:
     # Return the closest match as a string
     closest_match = patterns[closest_match_index]
     return closest_match
+
+
+def named_entity_recognition(message) -> Dict[str, str]:
+    # Process message with spacy
+    doc = NER(message)
+    print(doc.ents)
+    named_entities = {}
+    for entity in doc.ents:
+        named_entities[entity.text] = entity.label_
+    return named_entities

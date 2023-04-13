@@ -1,6 +1,6 @@
 import aiml
 import xml.etree.ElementTree as ET
-from nlp import best_match
+from nlp import best_match, named_entity_recognition
 
 # Load the XML file
 tree = ET.parse("brain.xml")
@@ -25,6 +25,9 @@ while True:
     message = input("> ").upper()
     match = best_match(message, patterns)
     print(match)
+
+    ner = named_entity_recognition(message)
+    print(ner)
 
     # Get bot response
     response = kernel.respond(match)
