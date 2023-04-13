@@ -73,4 +73,37 @@
         <template>My name is TARS!</template>
     </category>
 
+    <category>
+      <pattern>GOODBYE</pattern>
+      <template>
+        <random>
+          <li>Goodbye! Have a nice day.</li>
+          <li>Take care and stay safe.</li>
+          <li>Bye for now. Talk to you soon.</li>
+        </random>
+      </template>
+    </category>
+
+    <category>
+      <pattern>thank you</pattern>
+      <template>
+        <random>
+          <li>You're welcome!</li>
+          <li>No problem!</li>
+          <li>It was my pleasure.</li>
+          <li>Don't mention it.</li>
+        </random>
+      </template>
+    </category>
+
+    <category>
+      <pattern>BYE</pattern>
+      <template><srai>GOODBYE</srai></template>
+    </category>
+
+    <category>
+      <pattern>EXIT</pattern>
+      <template>Thanks for chatting with me. Goodbye!</template>
+    </category>
+
 </aiml>
