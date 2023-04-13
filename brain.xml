@@ -1,5 +1,27 @@
 <aiml>
     <category>
+        <pattern>HELLO</pattern>
+        <template>
+            <random>
+                <li>Hi there!</li>
+                <li>Nice to meet you!</li>
+                <li>Hello, how can I help you?</li>
+            </random>
+        </template>
+    </category>
+
+    <category>
+        <pattern>HI</pattern>
+        <template><srai>HELLO</srai></template>
+    </category>
+
+    <category>
+        <pattern>GREETINGS</pattern>
+        <template><srai>HELLO</srai></template>
+    </category>
+
+
+    <category>
         <pattern>WHAT IS THE MOVIE ABOUT</pattern>
         <template>
         Interstellar is a 2014 science fiction movie directed by Christopher Nolan. The movie follows a group of astronauts who travel through a wormhole in search of a new home for humanity after Earth becomes uninhabitable. Along the way, they encounter various challenges and obstacles that test their resolve and their understanding of the nature of time and space.
@@ -20,9 +42,35 @@
         <pattern>WHAT ARE BLACK HOLES</pattern>
         <template>Black holes are created when a star dies and collapses in on itself. Right at the moment of its creation, a gigantic explosion is released which is called a supernova. This supernova creates so much light and energy that it can be seen billions of light years away! After a black hole is born, it will suck in all matter and light through gravity and grow as it consumes more and more.</template>
     </category>
-<!--
-    <topic name="CHARACTERS">
 
-    </topic>
--->
+    <category>
+        <pattern>WHAT GENRE IS THE MOVIE</pattern>
+        <template>GENRE:NEEDED</template>
+    </category>
+
+    <category>
+        <pattern>WHO IS IN THE MOVIE </pattern>
+        <template>CAST:NEEDED</template>
+    </category>
+
+    <category>
+        <pattern>HOW LONG IS THE MOVIE</pattern>
+        <template>MOVIE LENGTH</template>
+    </category>
+
+    <category>
+        <pattern>WHAT IS THE MOVIE RATED</pattern>
+        <template>RATING</template>
+    </category>
+
+    <category>
+        <pattern>WHAT AWARDS DID THE MOVIE WIN</pattern>
+        <template>AWARDS</template>
+    </category>
+
+    <category>
+        <pattern>WHAT IS YOUR NAME</pattern>
+        <template>My name is TARS!</template>
+    </category>
+
 </aiml>
