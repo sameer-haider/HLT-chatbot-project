@@ -24,10 +24,10 @@ while True:
     # Get user input
     message = input("> ").upper()
     match = best_match(message, patterns)
-    print(match)
+    # print(match)
 
     ner = named_entity_recognition(message)
-    print(ner)
+    # print(ner)
 
     # Get bot response
     response = kernel.respond(match)

@@ -11,18 +11,17 @@ NER = spacy.load("en_core_web_md")
 
 def best_match(message, patterns) -> str:
     # Tokenize, lemmatize and remove stopwords from the user input and patterns
-    stop_words = set(stopwords.words("english"))
     wordnet_lemmatizer = WordNetLemmatizer()
     user_input_tokens = [
         wordnet_lemmatizer.lemmatize(word.lower())
         for word in word_tokenize(message)
-        if word.isalnum() and word.lower() not in stop_words
+        if word.isalnum()
     ]
     pattern_tokens = [
         [
             wordnet_lemmatizer.lemmatize(word.lower())
             for word in word_tokenize(pattern)
-            if word.isalnum() and word.lower() not in stop_words
+            if word.isalnum()
         ]
         for pattern in patterns
     ]
@@ -55,7 +54,6 @@ def best_match(message, patterns) -> str:
 def named_entity_recognition(message) -> Dict[str, str]:
     # Process message with spacy
     doc = NER(message)
-    print(doc.ents)
     named_entities = {}
     for entity in doc.ents:
         named_entities[entity.text] = entity.label_

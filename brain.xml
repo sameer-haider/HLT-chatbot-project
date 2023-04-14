@@ -22,7 +22,7 @@
 
 
     <category>
-        <pattern>WHAT IS INTERSTELLAR ABOUT</pattern>
+        <pattern>WHAT IS INTERSTELLAR THE MOVIE ABOUT</pattern>
         <template>
         Interstellar is a 2014 science fiction movie directed by Christopher Nolan. The movie follows a group of astronauts who travel through a wormhole in search of a new home for humanity after Earth becomes uninhabitable. Along the way, they encounter various challenges and obstacles that test their resolve and their understanding of the nature of time and space.
         </template>
@@ -44,12 +44,12 @@
     </category>
 
     <category>
-        <pattern>WHAT GENRE IS THE MOVIE</pattern>
+        <pattern>WHAT GENRE CATEGORY DOES THE MOVIE BELONG TOO</pattern>
         <template>Interstellar is a science fiction movie.</template>
     </category>
 
     <category>
-        <pattern>WHO IS IN THE MOVIE </pattern>
+        <pattern>WHICH WHO ACTORS PLAY ACT IN THE MOVIE</pattern>
         <template>. The movie features a cast of actors, including Matthew McConaughey, Anne Hathaway, Jessica Chastain, and Michael Caine, among others. </template>
     </category>
 
@@ -64,7 +64,7 @@
     </category>
 
     <category>
-        <pattern>WHAT AWARDS DID THE MOVIE WIN</pattern>
+        <pattern>WHAT AWARDS DID THE MOVIE WIN RECEIVE</pattern>
         <template>Interstellar was critically acclaimed upon its release in 2014, and it received numerous award nominations and wins. Such as the Academy Awards for Best Visual Effects and BAFTA Awards for Best Special Visual Effects. </template>
     </category>
 
