@@ -2,6 +2,7 @@ import aiml
 import xml.etree.ElementTree as ET
 import nlp
 
+
 # Load the XML file
 tree = ET.parse("brain.xml")
 
@@ -15,8 +16,6 @@ for category in root.findall("category"):
 # Create kernel and load aiml
 kernel = aiml.Kernel()
 kernel.learn("brain.xml")
-
-# Set the bot's name
 kernel.setBotPredicate("name", "TARS")
 
 # Enter the main interaction loop
@@ -26,8 +25,11 @@ while True:
     match = nlp.best_match(message, patterns)
     # print(match)
 
+    # NER for pattern asking "who played * in movie"
     ner = nlp.named_entity_recognition(message)
-    # print(ner)
+    actor = nlp.extract_person(ner)
+    if "*" in match:
+        match = match.replace("*", actor)
 
     # Get bot response
     response = kernel.respond(match)

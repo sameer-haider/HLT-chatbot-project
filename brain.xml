@@ -1,4 +1,4 @@
-<aiml>
+<aiml version="2.0">
     <category>
         <pattern>HELLO</pattern>
         <template>
@@ -69,6 +69,30 @@
     </category>
 
     <category>
+      <pattern>WHO DID * PLAY IN THE MOVIE INTERSTELLAR</pattern>
+      <template>
+        <think><set name="actor"><star/></set></think>
+        <condition name="actor">
+          <li value="MATTHEW MCCONAUGHEY">
+            Matthew McConaughey played Cooper in Interstellar.
+          </li>
+          <li value="ANNE HATHAWAY">
+            Anne Hathaway played Amelia Brand in Interstellar.
+          </li>
+          <li value="MATT DAMON">
+            Matt Damon played Dr. Mann in Interstellar.
+          </li>
+          <li value="JESSICA CHASTAIN">
+            Jessica Chastain played Murph in Interstellar.
+          </li>
+          <li>
+            I'm sorry, I don't know who <person><get name="actor"/></person> played in Interstellar.
+          </li>
+        </condition>
+      </template>
+    </category>
+
+    <category>
         <pattern>WHAT IS YOUR NAME</pattern>
         <template>My name is TARS!</template>
     </category>
@@ -110,5 +134,10 @@
       <pattern>NO MATCH</pattern>
       <template>Sorry, I don't understand what you are asking.</template>
     </category>
+
+  <topic name="python">
+    <learn>nlp.py</learn>
+  </topic>
+
 
 </aiml>
