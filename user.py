@@ -12,24 +12,11 @@ def create_user(username, age, like_1=0, like_2=0, like_3=0, like_4=0, like_5=0)
     with sqlite3.connect("mydatabase.db") as conn:
         cursor = conn.cursor()
         sql = """
-            CREATE TABLE IF NOT EXISTS user_models (
-                id INTEGER PRIMARY KEY AUTOINCREMENT,
-                username TEXT NOT NULL,
-                age INTEGER NOT NULL,
-                like_1 INTEGER DEFAULT 0,
-                like_2 INTEGER DEFAULT 0,
-                like_3 INTEGER DEFAULT 0,
-                like_4 INTEGER DEFAULT 0,
-                like_5 INTEGER DEFAULT 0
-            );
             INSERT INTO user_models (username, age, like_1, like_2, like_3, like_4, like_5)
             VALUES (?, ?, ?, ?, ?, ?, ?);
         """
-        cursor.executescript(sql)
-        cursor.execute("SELECT last_insert_rowid()")
-        row_id = cursor.fetchone()[0]
+        cursor.execute(sql, (username, age, like_1, like_2, like_3, like_4, like_5))
         conn.commit()
-        print(f"New user created successfully with ID: {row_id}")
 
 
 '''
