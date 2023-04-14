@@ -61,3 +61,13 @@ def named_entity_recognition(message) -> Dict[str, str]:
     for entity in doc.ents:
         named_entities[entity.text] = entity.label_
     return named_entities
+
+
+def extract_person(named_entities):
+    # Find the entity labeled as "PERSON" and return its text
+    for entity in named_entities:
+        if named_entities[entity] == "PERSON":
+            return entity
+
+    # If no "PERSON" entity was found, return None
+    return ""
