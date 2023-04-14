@@ -1,6 +1,6 @@
 import aiml
 import xml.etree.ElementTree as ET
-from nlp import best_match, named_entity_recognition
+import nlp
 
 # Load the XML file
 tree = ET.parse("brain.xml")
@@ -23,10 +23,10 @@ kernel.setBotPredicate("name", "TARS")
 while True:
     # Get user input
     message = input("> ").upper()
-    match = best_match(message, patterns)
+    match = nlp.best_match(message, patterns)
     # print(match)
 
-    ner = named_entity_recognition(message)
+    ner = nlp.named_entity_recognition(message)
     # print(ner)
 
     # Get bot response

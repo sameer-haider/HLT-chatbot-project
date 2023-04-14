@@ -7,6 +7,7 @@ import numpy as np
 import spacy
 
 NER = spacy.load("en_core_web_md")
+threshold = 0.3
 
 
 def best_match(message, patterns) -> str:
@@ -42,6 +43,8 @@ def best_match(message, patterns) -> str:
 
     # Calculate the cosine similarities between the user input and the patterns
     similarity_scores = cosine_similarity([user_input_vector], pattern_vectors)[0]
+    if max(similarity_scores) < threshold:
+        return "NO MATCH"
 
     # Find the index of the highest similarity score
     closest_match_index = np.argmax(similarity_scores)

@@ -106,4 +106,9 @@
       <template>Thanks for chatting with me. Goodbye!</template>
     </category>
 
+    <category>
+      <pattern>NO MATCH</pattern>
+      <template>Sorry, I don't understand what you are asking.</template>
+    </category>
+
 </aiml>
