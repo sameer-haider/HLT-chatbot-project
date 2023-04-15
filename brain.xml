@@ -179,7 +179,7 @@
     </category>
 
     <category>
-      <pattern>thank you</pattern>
+      <pattern>THANK YOU</pattern>
       <template>
         <random>
           <li>You're welcome!</li>
