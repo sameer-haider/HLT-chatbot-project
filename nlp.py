@@ -27,7 +27,7 @@ def best_match(message, patterns) -> str:
         for pattern in patterns
     ]
 
-    # Calculate the TF-IDF vectors for the user input and patterns
+    # Calculate the TF-vectors for the user input and patterns
     all_tokens = user_input_tokens + [
         token for pattern in pattern_tokens for token in pattern
     ]
