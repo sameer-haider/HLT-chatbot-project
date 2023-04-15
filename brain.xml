@@ -171,8 +171,9 @@
       <template>
         <random>
           <li>Goodbye! Have a nice day <get name="name"/>.</li>
-          <li>Take care and stay safe <get name="name"/>.</li>
-          <li>Bye for now. Talk to you soon.</li>
+          <li>Goodbye! Take care and stay safe <get name="name"/>.</li>
+          <li>Goodbye for now. Talk to you soon.</li>
+          <li>Thanks for chatting with me. Goodbye <get name="name"/>!</li>
         </random>
       </template>
     </category>
@@ -196,7 +197,12 @@
 
     <category>
       <pattern>EXIT</pattern>
-      <template>Thanks for chatting with me. Goodbye <get name="name"/>!</template>
+      <template><srai>GOODBYE</srai></template>
+    </category>
+
+    <category>
+      <pattern>QUIT</pattern>
+      <template><srai>GOODBYE</srai></template>
     </category>
 
     <category>
