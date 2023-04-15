@@ -95,6 +95,26 @@
     </category>
 
     <category>
+        <pattern>WHAT CAN YOU TELL ME</pattern>
+        <template>I can provide you with some facts about Interstellar</template>
+    </category>
+
+    <category>
+        <pattern>WHAT CAN YOU DO</pattern>
+        <template>Not much but I can tell you about Interstellar</template>
+    </category>
+
+    <category>
+        <pattern>HELP</pattern>
+        <template>For emergencies I recommended contacting 911</template>
+    </category>
+
+    <category>
+        <pattern>COOL</pattern>
+        <template>Very Chill!</template>
+    </category>
+
+    <category>
         <pattern>WHAT AWARDS DID THE MOVIE WIN RECEIVE</pattern>
         <template>Interstellar was critically acclaimed upon its release in 2014, and it received numerous award nominations and wins. Such as the Academy Awards for Best Visual Effects and BAFTA Awards for Best Special Visual Effects. </template>
     </category>
@@ -174,5 +194,5 @@
   <topic name="python">
     <learn>nlp.py</learn>
   </topic>
-    
+
 </aiml>
