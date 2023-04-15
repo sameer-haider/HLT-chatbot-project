@@ -3,11 +3,23 @@
         <pattern>HELLO</pattern>
         <template>
             <random>
-                <li>Hi there!</li>
-                <li>Nice to meet you!</li>
+                <li>Hi there <get name="name"/>!</li>
+                <li>Nice to meet you <get name="name"/>!</li>
                 <li>Hello, how can I help you?</li>
+                <li>Hello!</li>
+                <li>What's up!</li>
             </random>
         </template>
+    </category>
+
+    <category>
+      <pattern>NEW USER *</pattern>
+      <template>Nice to meet you, <set name="name"><star/></set>! My Name is TARS would you like to talk about Interstellar? </template>
+    </category>
+
+    <category>
+      <pattern>RETURNING USER *</pattern>
+      <template> Hello! It's nice to see you again <set name="name"><star/></set>! </template>
     </category>
 
     <category>
@@ -16,10 +28,29 @@
     </category>
 
     <category>
+        <pattern>HEY</pattern>
+        <template><srai>HELLO</srai></template>
+    </category>
+
+    <category>
+        <pattern>HOWS IT GOING</pattern>
+        <template>Im functioning!</template>
+    </category>
+
+    <category>
         <pattern>GREETINGS</pattern>
         <template><srai>HELLO</srai></template>
     </category>
 
+    <category>
+        <pattern>YES</pattern>
+        <template>Great!</template>
+    </category>
+
+    <category>
+        <pattern>IT IS NICE TO MEET YOU</pattern>
+        <template>It's nice to meet you <get name="name"/>!</template>
+    </category>
 
     <category>
         <pattern>WHAT IS INTERSTELLAR THE MOVIE ABOUT</pattern>
@@ -101,8 +132,8 @@
       <pattern>GOODBYE</pattern>
       <template>
         <random>
-          <li>Goodbye! Have a nice day.</li>
-          <li>Take care and stay safe.</li>
+          <li>Goodbye! Have a nice day <get name="name"/>.</li>
+          <li>Take care and stay safe <get name="name"/>.</li>
           <li>Bye for now. Talk to you soon.</li>
         </random>
       </template>
@@ -114,7 +145,7 @@
         <random>
           <li>You're welcome!</li>
           <li>No problem!</li>
-          <li>It was my pleasure.</li>
+          <li>It was my pleasure <get name="name"/>.</li>
           <li>Don't mention it.</li>
         </random>
       </template>
@@ -127,7 +158,12 @@
 
     <category>
       <pattern>EXIT</pattern>
-      <template>Thanks for chatting with me. Goodbye!</template>
+      <template>Thanks for chatting with me. Goodbye <get name="name"/>!</template>
+    </category>
+
+    <category>
+      <pattern>NO I DONT</pattern>
+      <template>That's unfortunate!</template>
     </category>
 
     <category>
@@ -138,6 +174,5 @@
   <topic name="python">
     <learn>nlp.py</learn>
   </topic>
-
-
+    
 </aiml>
