@@ -70,9 +70,27 @@
     </category>
 
     <category>
-        <pattern>WHAT ARE BLACK HOLES</pattern>
-        <template>Black holes are created when a star dies and collapses in on itself. Right at the moment of its creation, a gigantic explosion is released which is called a supernova. This supernova creates so much light and energy that it can be seen billions of light years away! After a black hole is born, it will suck in all matter and light through gravity and grow as it consumes more and more.</template>
+      <pattern>WHAT ARE BLACK HOLES</pattern>
+      <template>
+        <condition name="like_2">
+          <li value="YES">
+            <random>
+              <li>I know you like space science, so I'll give you the cool answer. Black holes are incredibly dense objects in space that have a gravitational pull so strong that nothing, not even light, can escape.</li>
+              <li>I know you like space science, so I'll give you the cool answer. Black holes form when massive stars collapse under the force of their own gravity, creating a singularity.</li>
+              <li>I know you like space science, so I'll give you the cool answer. Black holes are fascinating objects that have puzzled astronomers for decades. They offer unique opportunities to study the laws of physics under extreme conditions.</li>
+            </random>
+          </li>
+          <li value="NO">
+            <random>
+              <li>I know you hate space science, so here is the simple explanation for this super boring topic. Black holes are like these really intense things in space where everything gets sucked in and disappears forever.</li>
+              <li>I know you hate space science, so here is the simple explanation for this super boring topic. Black holes are basically just giant space vacuums that swallow everything up.</li>
+              <li>I know you hate space science, so here is the simple explanation for this super boring topic. Black holes are, like, these scary things in space that we don't really understand, but they can destroy entire galaxies if they get too close.</li>
+            </random>
+          </li>
+        </condition>
+      </template>
     </category>
+
 
     <category>
         <pattern>WHAT GENRE CATEGORY DOES THE MOVIE BELONG TOO</pattern>
