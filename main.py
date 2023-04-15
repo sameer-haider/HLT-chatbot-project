@@ -23,27 +23,26 @@ username = input('Enter a username, or enter "new" if you want to make a new use
 if username == "new":
     username = input("Choose a username (chatbot will address you by this): ")
     age = input("State your age: ")
-    like_1_str = input(
-        "Do you like space science. Interstellar talks a lot about space. Enter (y/n) "
-    )
+    like_1_str = input("Do you like space science. Interstellar talks a lot about space. Enter (y/n):")
     like_1 = 0
     if like_1_str == "y":
         like_1 = 1
-    like_2_str = input("Do you like Matthew McConaughey? Enter (y/n)")
+    like_2_str = input("Do you like Matthew McConaughey? Enter (y/n):")
     like_2 = 0
     if like_2_str == "y":
         like_2 = 1
-
     user.create_user(username=username, age=age, like_1=like_1, like_2=like_2)
+    print("TARS: " + kernel.respond("NEW USER " + username))
+else:
+    print("TARS: " + kernel.respond("RETURNING USER " + username))
 
 info = user.get_user_by_username(username)
-
-print(info)
+#print(info)
 
 # Enter the main interaction loop
 while True:
     # Get user input
-    message = input("> ").upper()
+    message = input("USER: ").upper()
     match = nlp.best_match(message, patterns)
     # print(match)
 
@@ -57,4 +56,4 @@ while True:
     response = kernel.respond(match)
 
     # Print the bot's response
-    print(response)
+    print("TARS: " + response)
