@@ -55,7 +55,7 @@
     <category>
         <pattern>WHAT IS INTERSTELLAR THE MOVIE ABOUT</pattern>
         <template>
-        Interstellar is a 2014 science fiction movie directed by Christopher Nolan. The movie follows a group of astronauts who travel through a wormhole in search of a new home for humanity after Earth becomes uninhabitable. Along the way, they encounter various challenges and obstacles that test their resolve and their understanding of the nature of time and space.
+        The movie is about a group of astronauts who travel through a wormhole in search of a new home for humanity after Earth becomes uninhabitable. Along the way, they encounter various challenges and obstacles that test their resolve and their understanding of the nature of time and space.
         </template>
     </category>
 
@@ -91,22 +91,22 @@
 
     <category>
         <pattern>WHAT IS THE MOVIE RATED</pattern>
-        <template>Interstellar is rated PG-13</template>
+        <template>Interstellar is rated PG-13.</template>
     </category>
 
     <category>
         <pattern>WHAT CAN YOU TELL ME</pattern>
-        <template>I can provide you with some facts about Interstellar</template>
+        <template>I can provide you with some facts about Interstellar.</template>
     </category>
 
     <category>
         <pattern>WHAT CAN YOU DO</pattern>
-        <template>Not much but I can tell you about Interstellar</template>
+        <template>Not much but I can tell you about Interstellar!</template>
     </category>
 
     <category>
         <pattern>HELP</pattern>
-        <template>For emergencies I recommended contacting 911</template>
+        <template>For emergencies contact 911!</template>
     </category>
 
     <category>
