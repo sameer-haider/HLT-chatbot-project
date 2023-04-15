@@ -39,7 +39,6 @@ else:
     print("TARS: " + kernel.respond("RETURNING USER " + username))
 
 info = user.get_user_by_username(username)
-print(info)
 like_1 = info[3]
 if like_1 == 1:
     kernel.respond("SET LIKE 1 YES")
