@@ -68,3 +68,6 @@ while True:
 
     # Print the bot's response
     print("TARS: " + response)
+
+    if "Goodbye" in response:
+        break
