@@ -23,7 +23,9 @@ username = input('Enter a username, or enter "new" if you want to make a new use
 if username == "new":
     username = input("Choose a username (chatbot will address you by this): ")
     age = input("State your age: ")
-    like_1_str = input("Do you like space science. Interstellar talks a lot about space. Enter (y/n):")
+    like_1_str = input(
+        "Do you like space science. Interstellar talks a lot about space. Enter (y/n):"
+    )
     like_1 = 0
     if like_1_str == "y":
         like_1 = 1
@@ -37,7 +39,17 @@ else:
     print("TARS: " + kernel.respond("RETURNING USER " + username))
 
 info = user.get_user_by_username(username)
-#print(info)
+print(info)
+like_1 = info[3]
+if like_1 == 1:
+    kernel.respond("SET LIKE 1 YES")
+else:
+    kernel.respond("SET LIKE 1 NO")
+like_2 = info[4]
+if like_2 == 1:
+    kernel.respond("SET LIKE 2 YES")
+else:
+    kernel.respond("SET LIKE 2 NO")
 
 # Enter the main interaction loop
 while True:

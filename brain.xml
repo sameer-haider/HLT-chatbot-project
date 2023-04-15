@@ -191,8 +191,28 @@
       <template>Sorry, I don't understand what you are asking.</template>
     </category>
 
-  <topic name="python">
-    <learn>nlp.py</learn>
-  </topic>
+    <category>
+      <pattern>DID MATTHEW MCCONAUGHEY WIN AWARDS FROM THIS MOVIE</pattern>
+      <template>
+        <condition name="like_1">
+          <li value="YES">I know that you like Matthew McConaughey, so you should be proud to learn that he won the Academy Award for Best Actor, as well as other awards!</li>
+          <li value="NO">I know that you dislike Matthew McConaughey, but that doesn't mean I should hide the truth. Unfortunately, Matthew McConaughey did win the Academy Award for Best Actor</li>
+        </condition>
+      </template>
+    </category>
+
+    <category>
+      <pattern>SET LIKE 1 *</pattern>
+      <template>
+        <think><set name="like_1"><star/></set></think>
+      </template>
+    </category>
+
+    <category>
+      <pattern>SET LIKE 2 *</pattern>
+      <template>
+        <think><set name="like_2"><star/></set></think>
+      </template>
+    </category>
 
 </aiml>
