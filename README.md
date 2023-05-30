@@ -1,6 +1,6 @@
 # Interstellar T.A.R.S Chatbot
 
-Welcome to the *Interstellar T.A.R.S* chatbot, an engaging AI assistant built with [AIML](http://www.aiml.foundation/index.html), the XML-based language developed by the A.L.I.C.E AI Foundation and Dr. Richard Wallace. This chatbot was crafted as part of the CS 4395 - Human Language Technologies course at the University of Texas at Dallas.
+Welcome to the Interstellar T.A.R.S chatbot, an engaging AI assistant built with [AIML](http://www.aiml.foundation/index.html), the XML-based language developed by the A.L.I.C.E AI Foundation and Dr. Richard Wallace. This chatbot was crafted as part of the CS 4395 - Human Language Technologies course at the University of Texas at Dallas.
 
 As a tribute to Christopher Nolan's masterpiece *Interstellar*, our chatbot is aptly named **T.A.R.S** - inspired by the AI assistant from the film. **T.A.R.S** is designed to answer any questions you may have about the movie.
 
