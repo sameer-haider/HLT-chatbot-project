@@ -2,7 +2,7 @@
 
 Welcome to the Interstellar T.A.R.S chatbot, an engaging AI assistant built with [AIML](http://www.aiml.foundation/index.html), the XML-based language developed by the A.L.I.C.E AI Foundation and Dr. Richard Wallace. This chatbot was crafted as part of the CS 4395 - Human Language Technologies course at the University of Texas at Dallas.
 
-As a tribute to Christopher Nolan's masterpiece *Interstellar*, our chatbot is aptly named **T.A.R.S** - inspired by the AI assistant from the film. **T.A.R.S** is designed to answer any questions you may have about the movie.
+As a tribute to Christopher Nolan's masterpiece *Interstellar*, our chatbot is aptly named T.A.R.S - inspired by the AI assistant from the film. T.A.R.S is designed to answer any questions you may have about the movie.
 
 ## Key Features
 
@@ -10,7 +10,11 @@ As a tribute to Christopher Nolan's masterpiece *Interstellar*, our chatbot is a
 
 * **Cosine Similarity**: This algorithm measures the similarity between user input and pre-defined responses, enabling the chatbot to deliver accurate and relevant responses.
 
-* **Named Entity Recognition (NER)**: NER helps the chatbot to understand and classify entities (like names, locations, and expressions of times) within the user's input, resulting in a more contextual and meaningful conversation.
+* **Named Entity Recognition (NER)**: NER helps the chatbot to understand and classify entities (like actor names, locations, and expressions of times) within the user's input, resulting in a more contextual and meaningful conversation.
+
+**Personalized User Experience**: T.A.R.S ensures a unique and personalized interaction by storing user models.
+
+* **User Model Storage**: The chatbot captures and stores user details, such as names, likes, and dislikes, in a MySQL table. This facilitates personalized conversations and allows T.A.R.S to tailor responses according to user preferences.
 
 ## Technologies
 Key python libraries used:
